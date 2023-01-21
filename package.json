@@ -36,6 +36,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@auth/core": "^0.2.5",
+		"@auth/sveltekit": "^0.1.12",
+		"@popperjs/core": "^2.11.6",
+		"@tailwindcss/forms": "^0.5.3",
 		"daisyui": "^2.47.0"
 	}
 }

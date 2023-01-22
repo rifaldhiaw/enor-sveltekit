@@ -1,6 +1,5 @@
 <script lang="ts">
-	import NotificationDropdown from '$lib/components/NotificationDropdown.svelte';
-	import UserDropdown from '$lib/components/UserDropdown.svelte';
+	import UserDropdown from '$lib/modules/app/UserDropdown.svelte';
 
 	import { page } from '$app/stores';
 	import { signOut } from '@auth/sveltekit/client';
@@ -35,9 +34,6 @@
 		</a>
 		<!-- User -->
 		<ul class="md:hidden items-center flex flex-wrap list-none">
-			<li class="inline-block relative">
-				<NotificationDropdown />
-			</li>
 			<li class="inline-block relative">
 				<UserDropdown />
 			</li>

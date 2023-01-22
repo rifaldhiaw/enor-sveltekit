@@ -1,6 +1,6 @@
 <script>
-	import AuthNavbar from '$lib/components/AuthNavbar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import AuthNavbar from '$lib/modules/auth/AuthNavbar.svelte';
+	import Footer from '$lib/modules/landing/Footer.svelte';
 
 	const team1 = '/assets/img/team-1-800x800.jpg';
 	const team2 = '/assets/img/team-2-800x800.jpg';

@@ -1,6 +1,6 @@
 <script>
-	import AuthNavbar from '$lib/components/AuthNavbar.svelte';
-	import FooterSmall from '$lib/components/FooterSmall.svelte';
+	import AuthNavbar from '$lib/modules/auth/AuthNavbar.svelte';
+	import FooterSmall from '$lib/modules/auth/FooterSmall.svelte';
 
 	const registerBg2 = '../assets/img/register_bg_2.png';
 </script>

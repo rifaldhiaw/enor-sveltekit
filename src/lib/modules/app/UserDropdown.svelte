@@ -18,7 +18,7 @@
 		} else {
 			dropdownPopoverShow = true;
 			createPopper(btnDropdownRef, popoverDropdownRef, {
-				placement: 'bottom-start'
+				placement: 'bottom-end'
 			});
 		}
 	};

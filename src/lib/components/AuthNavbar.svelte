@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import { signOut } from '@auth/sveltekit/client';
 
 	let navbarOpen = false;
 
@@ -71,13 +70,14 @@
 				<li class="flex items-center">
 					<!-- if has session data -->
 					{#if Object.keys($page.data.session || {}).length}
-						<button
-							class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-							type="button"
-							on:click={() => signOut()}
-						>
-							Logout
-						</button>
+						<a href="/app">
+							<button
+								class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+								type="button"
+							>
+								App
+							</button>
+						</a>
 					{:else}
 						<a href="/login">
 							<button
@@ -88,17 +88,6 @@
 							</button>
 						</a>
 					{/if}
-				</li>
-
-				<li class="flex items-center">
-					<a href="/app">
-						<button
-							class="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-							type="button"
-						>
-							App
-						</button>
-					</a>
 				</li>
 			</ul>
 		</div>

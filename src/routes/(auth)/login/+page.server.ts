@@ -1,10 +1,10 @@
-import type { Actions } from './$types';
+import { redirect } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 
-export const actions: Actions = {
-	login: async ({ request }) => {
-		return { success: true };
-	},
-	register: async (event) => {
-		// TODO register the user
+export const load: PageServerLoad = async (event) => {
+	const session = await event.locals.getSession();
+
+	if (session) {
+		throw redirect(303, '/app');
 	}
 };

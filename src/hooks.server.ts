@@ -5,7 +5,6 @@ import { redirect, type Handle } from '@sveltejs/kit';
 import { sequence } from '@sveltejs/kit/hooks';
 
 const authorization: Handle = async ({ event, resolve }) => {
-	console.log('authorization hook', event.url.pathname);
 	if (event.url.pathname.startsWith('/app')) {
 		const session = await event.locals.getSession();
 		if (!session) {

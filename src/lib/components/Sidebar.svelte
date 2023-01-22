@@ -3,6 +3,7 @@
 	import UserDropdown from '$lib/components/UserDropdown.svelte';
 
 	import { page } from '$app/stores';
+	import { signOut } from '@auth/sveltekit/client';
 
 	let collapseShow = 'hidden';
 
@@ -207,6 +208,19 @@
 					</a>
 				</li>
 			</ul>
+
+			<!-- Divider -->
+			<hr class="my-4 md:min-w-full" />
+
+			<!-- logout button -->
+
+			<button
+				type="submit"
+				class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+				on:click={() => signOut()}
+			>
+				Logout
+			</button>
 		</div>
 	</div>
 </nav>

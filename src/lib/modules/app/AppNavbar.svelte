@@ -1,5 +1,4 @@
 <script>
-	import UserDropdown from './UserDropdown.svelte';
 </script>
 
 <!-- Navbar -->
@@ -34,7 +33,7 @@
 		</form>
 		<!-- User -->
 		<ul class="flex-col md:flex-row list-none items-center hidden md:flex">
-			<UserDropdown />
+			<!-- <UserDropdown /> -->
 		</ul>
 	</div>
 </nav>

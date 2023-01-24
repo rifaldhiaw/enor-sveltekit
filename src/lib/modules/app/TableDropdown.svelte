@@ -1,61 +1,51 @@
 <script lang="ts">
-	// library for creating dropdown menu appear on click
-	import { createPopper } from '@popperjs/core';
+	import { classNames } from '$lib/utils/classNames';
+	import { Menu, MenuButton, MenuItem, MenuItems } from '@rgossiaux/svelte-headlessui';
+	import { createPopperActions } from 'svelte-popperjs';
 
-	// core components
-	let dropdownPopoverShow = false;
+	const [popperRef, popperContent] = createPopperActions();
 
-	let btnDropdownRef: HTMLAnchorElement;
-	let popoverDropdownRef: HTMLDivElement;
-
-	const toggleDropdown = (event: MouseEvent) => {
-		event.preventDefault();
-		if (dropdownPopoverShow) {
-			dropdownPopoverShow = false;
-		} else {
-			dropdownPopoverShow = true;
-			createPopper(btnDropdownRef, popoverDropdownRef, {
-				placement: 'bottom-start'
-			});
-		}
+	// Example Popper configuration
+	const popperOptions = {
+		placement: 'bottom-end',
+		strategy: 'fixed',
+		modifiers: [{ name: 'offset', options: { offset: [0, 10] } }]
 	};
+
+	function resolveClass({ active, disabled }: { active: boolean; disabled: boolean }) {
+		return classNames(
+			'flex justify-between w-full px-4 py-2 text-sm leading-5 text-left',
+			active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+			disabled && 'cursor-not-allowed opacity-50'
+		);
+	}
 </script>
 
-<div>
-	<a
-		class="text-slate-500 py-1 px-3"
-		href="#pablo"
-		bind:this={btnDropdownRef}
-		on:click={toggleDropdown}
+<Menu>
+	<span class="rounded-md shadow-sm">
+		<MenuButton
+			use={[popperRef]}
+			class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white  rounded-md hover:text-gray-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+		>
+			<i class="fas fa-ellipsis-v" />
+		</MenuButton>
+	</span>
+
+	<MenuItems
+		use={[[popperContent, popperOptions]]}
+		class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
 	>
-		<i class="fas fa-ellipsis-v" />
-	</a>
-	<div
-		bind:this={popoverDropdownRef}
-		class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 {dropdownPopoverShow
-			? 'block'
-			: 'hidden'}"
-	>
-		<a
-			href="#pablo"
-			on:click={(e) => e.preventDefault()}
-			class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-		>
-			Action
-		</a>
-		<a
-			href="#pablo"
-			on:click={(e) => e.preventDefault()}
-			class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-		>
-			Another action
-		</a>
-		<a
-			href="#pablo"
-			on:click={(e) => e.preventDefault()}
-			class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-		>
-			Something else here
-		</a>
-	</div>
-</div>
+		<div class="py-1">
+			<MenuItem as="a" href="#account-settings" class={resolveClass}>Account settings</MenuItem>
+			<MenuItem as="a" href="#support" class={resolveClass}>Support</MenuItem>
+			<MenuItem as="a" disabled href="#new-feature" class={resolveClass}>
+				New feature (soon)
+			</MenuItem>
+			<MenuItem as="a" href="#license" class={resolveClass}>License</MenuItem>
+		</div>
+
+		<div class="py-1">
+			<MenuItem as="a" href="#sign-out" class={resolveClass}>Sign out</MenuItem>
+		</div>
+	</MenuItems>
+</Menu>

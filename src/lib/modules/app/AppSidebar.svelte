@@ -1,6 +1,4 @@
 <script lang="ts">
-	import UserDropdown from '$lib/modules/app/UserDropdown.svelte';
-
 	import { page } from '$app/stores';
 	import { signOut } from '@auth/sveltekit/client';
 
@@ -35,7 +33,7 @@
 		<!-- User -->
 		<ul class="md:hidden items-center flex flex-wrap list-none">
 			<li class="inline-block relative">
-				<UserDropdown />
+				<!-- <UserDropdown /> -->
 			</li>
 		</ul>
 		<!-- Collapse -->
@@ -86,7 +84,7 @@
 			<!-- Navigation -->
 
 			<ul class="md:flex-col md:min-w-full flex flex-col list-none">
-				<li class="items-center">
+				<li>
 					<a
 						href="/app"
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname === '/app'
@@ -102,7 +100,7 @@
 					</a>
 				</li>
 
-				<li class="items-center">
+				<li>
 					<a
 						href="/app/settings"
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname.includes(
@@ -120,7 +118,7 @@
 					</a>
 				</li>
 
-				<li class="items-center">
+				<li>
 					<a
 						href="/app/tables"
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname.includes(
@@ -150,7 +148,7 @@
 			<!-- Navigation -->
 
 			<ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-				<li class="items-center">
+				<li>
 					<a
 						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/login"
@@ -160,7 +158,7 @@
 					</a>
 				</li>
 
-				<li class="items-center">
+				<li>
 					<a
 						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/register"
@@ -182,7 +180,7 @@
 			<!-- Navigation -->
 
 			<ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-				<li class="items-center">
+				<li>
 					<a
 						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/"
@@ -192,7 +190,7 @@
 					</a>
 				</li>
 
-				<li class="items-center">
+				<li>
 					<a
 						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/profile"
@@ -208,13 +206,7 @@
 
 			<!-- logout button -->
 
-			<button
-				type="submit"
-				class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-				on:click={() => signOut()}
-			>
-				Logout
-			</button>
+			<button type="submit" class="btn-primary" on:click={() => signOut()}> Logout </button>
 		</div>
 	</div>
 </nav>

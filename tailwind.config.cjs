@@ -1,5 +1,4 @@
 const plugin = require('tailwindcss/plugin');
-const colors = require('tailwindcss/colors');
 
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -8,9 +7,6 @@ module.exports = {
 	},
 	plugins: [require('daisyui')],
 	theme: {
-		colors: {
-			...colors
-		},
 		extend: {
 			minHeight: {
 				'screen-75': '75vh'

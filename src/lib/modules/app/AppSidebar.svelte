@@ -27,7 +27,7 @@
 		</button>
 		<!-- Brand -->
 		<a
-			class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
+			class="md:block text-left md:pb-2 text-slate-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
 			href="/"
 		>
 			Notus Svelte
@@ -43,13 +43,11 @@
 			class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded {collapseShow}"
 		>
 			<!-- Collapse header -->
-			<div
-				class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200"
-			>
+			<div class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-slate-200">
 				<div class="flex flex-wrap">
 					<div class="w-6/12">
 						<a
-							class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
+							class="md:block text-left md:pb-2 text-slate-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
 							href="/"
 						>
 							Notus Svelte
@@ -72,7 +70,7 @@
 					<input
 						type="text"
 						placeholder="Search"
-						class="border-0 px-3 py-2 h-12 border border-solid border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+						class="border-0 px-3 py-2 h-12 border border-solid border-slate-500 placeholder-slate-300 text-slate-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
 					/>
 				</div>
 			</form>
@@ -81,7 +79,7 @@
 			<hr class="my-4 md:min-w-full" />
 			<!-- Heading -->
 			<h6
-				class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
+				class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
 			>
 				Admin Layout Pages
 			</h6>
@@ -93,12 +91,12 @@
 						href="/app"
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname === '/app'
 							? 'text-red-500 hover:text-red-600'
-							: 'text-blueGray-700 hover:text-blueGray-500'}"
+							: 'text-slate-700 hover:text-slate-500'}"
 					>
 						<i
 							class="fas fa-tv mr-2 text-sm {$page.url.pathname === '/app'
 								? 'opacity-75'
-								: 'text-blueGray-300'}"
+								: 'text-slate-300'}"
 						/>
 						Dashboard
 					</a>
@@ -111,12 +109,12 @@
 							'/app/settings'
 						)
 							? 'text-red-500 hover:text-red-600'
-							: 'text-blueGray-700 hover:text-blueGray-500'}"
+							: 'text-slate-700 hover:text-slate-500'}"
 					>
 						<i
 							class="fas fa-tools mr-2 text-sm {$page.url.pathname.includes('/app/settings')
 								? 'opacity-75'
-								: 'text-blueGray-300'}"
+								: 'text-slate-300'}"
 						/>
 						Settings
 					</a>
@@ -129,12 +127,12 @@
 							'/app/tables'
 						)
 							? 'text-red-500 hover:text-red-600'
-							: 'text-blueGray-700 hover:text-blueGray-500'}"
+							: 'text-slate-700 hover:text-slate-500'}"
 					>
 						<i
 							class="fas fa-table mr-2 text-sm {$page.url.pathname.includes('/app/tables')
 								? 'opacity-75'
-								: 'text-blueGray-300'}"
+								: 'text-slate-300'}"
 						/>
 						Tables
 					</a>
@@ -145,7 +143,7 @@
 			<hr class="my-4 md:min-w-full" />
 			<!-- Heading -->
 			<h6
-				class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
+				class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
 			>
 				Auth Layout Pages
 			</h6>
@@ -154,20 +152,20 @@
 			<ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
 				<li class="items-center">
 					<a
-						class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/login"
 					>
-						<i class="fas fa-fingerprint text-blueGray-300 mr-2 text-sm" />
+						<i class="fas fa-fingerprint text-slate-300 mr-2 text-sm" />
 						Login
 					</a>
 				</li>
 
 				<li class="items-center">
 					<a
-						class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/register"
 					>
-						<i class="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm" />
+						<i class="fas fa-clipboard-list text-slate-300 mr-2 text-sm" />
 						Register
 					</a>
 				</li>
@@ -177,7 +175,7 @@
 			<hr class="my-4 md:min-w-full" />
 			<!-- Heading -->
 			<h6
-				class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
+				class="md:min-w-full text-slate-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
 			>
 				No Layout Pages
 			</h6>
@@ -186,20 +184,20 @@
 			<ul class="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
 				<li class="items-center">
 					<a
-						class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/"
 					>
-						<i class="fas fa-newspaper text-blueGray-300 mr-2 text-sm" />
+						<i class="fas fa-newspaper text-slate-300 mr-2 text-sm" />
 						Landing Page
 					</a>
 				</li>
 
 				<li class="items-center">
 					<a
-						class="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+						class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
 						href="/profile"
 					>
-						<i class="fas fa-user-circle text-blueGray-300 mr-2 text-sm" />
+						<i class="fas fa-user-circle text-slate-300 mr-2 text-sm" />
 						Profile Page
 					</a>
 				</li>

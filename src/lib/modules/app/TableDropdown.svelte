@@ -3,9 +3,6 @@
 	import { createPopper } from '@popperjs/core';
 
 	// core components
-
-	const image = '../assets/img/team-1-800x800.jpg';
-
 	let dropdownPopoverShow = false;
 
 	let btnDropdownRef: HTMLAnchorElement;
@@ -18,7 +15,7 @@
 		} else {
 			dropdownPopoverShow = true;
 			createPopper(btnDropdownRef, popoverDropdownRef, {
-				placement: 'bottom-end'
+				placement: 'bottom-start'
 			});
 		}
 	};
@@ -26,18 +23,12 @@
 
 <div>
 	<a
-		class="text-slate-500 block"
+		class="text-slate-500 py-1 px-3"
 		href="#pablo"
 		bind:this={btnDropdownRef}
 		on:click={toggleDropdown}
 	>
-		<div class="items-center flex">
-			<span
-				class="w-12 h-12 text-sm text-white bg-slate-200 inline-flex items-center justify-center rounded-full"
-			>
-				<img alt="..." class="w-full rounded-full align-middle border-none shadow-lg" src={image} />
-			</span>
-		</div>
+		<i class="fas fa-ellipsis-v" />
 	</a>
 	<div
 		bind:this={popoverDropdownRef}
@@ -65,14 +56,6 @@
 			class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
 		>
 			Something else here
-		</a>
-		<div class="h-0 my-2 border border-solid border-slate-100" />
-		<a
-			href="#pablo"
-			on:click={(e) => e.preventDefault()}
-			class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-		>
-			Seprated link
 		</a>
 	</div>
 </div>

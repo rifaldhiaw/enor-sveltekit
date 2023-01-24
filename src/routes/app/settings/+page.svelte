@@ -1,3 +1,13 @@
-<h1 class="bg-white text-black h-48 rounded mb-24">
-	<div class="flex justify-center items-center h-full">Settings</div>
-</h1>
+<script>
+	import CardProfile from '$lib/modules/app/CardProfile.svelte';
+	import FormExample from '$lib/modules/app/FormExample.svelte';
+</script>
+
+<div class="flex flex-wrap">
+	<div class="w-full lg:w-8/12 px-4">
+		<FormExample />
+	</div>
+	<div class="w-full lg:w-4/12 px-4">
+		<CardProfile />
+	</div>
+</div>

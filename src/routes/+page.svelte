@@ -62,7 +62,7 @@
 						>
 							<div class="px-4 py-5 flex-auto">
 								<div
-									class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+									class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-primary-400"
 								>
 									<i class="fas fa-award" />
 								</div>
@@ -138,7 +138,7 @@
 
 					<div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
 						<div
-							class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-400"
+							class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-primary-400"
 						>
 							<img
 								alt="..."
@@ -152,7 +152,7 @@
 									viewBox="0 0 583 95"
 									class="absolute left-0 w-full block h-95-px -top-94-px"
 								>
-									<polygon points="-30,95 583,95 583,65" class="text-red-400 fill-current" />
+									<polygon points="-30,95 583,95 583,65" class="text-primary-400 fill-current" />
 								</svg>
 								<h4 class="text-xl font-bold text-white">Top Notch Services</h4>
 								<p class="text-md font-light mt-2 text-white">
@@ -196,7 +196,7 @@
 					<div class="w-full md:w-5/12 ml-auto mr-auto px-4">
 						<div class="md:pr-12">
 							<div
-								class="text-red-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-300"
+								class="text-primary-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-primary-200"
 							>
 								<i class="fas fa-rocket text-xl" />
 							</div>
@@ -210,7 +210,7 @@
 									<div class="flex items-center">
 										<div>
 											<span
-												class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-3"
+												class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-600 bg-primary-100 mr-3"
 											>
 												<i class="fas fa-fingerprint" />
 											</span>
@@ -224,7 +224,7 @@
 									<div class="flex items-center">
 										<div>
 											<span
-												class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-3"
+												class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-600 bg-primary-100 mr-3"
 											>
 												<i class="fab fa-html5" />
 											</span>
@@ -238,7 +238,7 @@
 									<div class="flex items-center">
 										<div>
 											<span
-												class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-3"
+												class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-600 bg-primary-100 mr-3"
 											>
 												<i class="far fa-paper-plane" />
 											</span>
@@ -306,7 +306,7 @@
 								</p>
 								<div class="mt-6">
 									<button
-										class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+										class="bg-primary-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
 										type="button"
 									>
 										<i class="fab fa-google" />
@@ -329,7 +329,7 @@
 								<p class="mt-1 text-sm text-slate-400 uppercase font-semibold">UI/UX Designer</p>
 								<div class="mt-6">
 									<button
-										class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+										class="bg-primary-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
 										type="button"
 									>
 										<i class="fab fa-google" />
@@ -364,7 +364,7 @@
 										<i class="fab fa-dribbble" />
 									</button>
 									<button
-										class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+										class="bg-primary-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
 										type="button"
 									>
 										<i class="fab fa-google" />

@@ -6,7 +6,7 @@
 
 <div>
 	<AppSidebar />
-	<div class="relative md:ml-64 min-h-screen bg-slate-100">
+	<div class="relative md:ml-64 min-h-screen bg-slate-100 pb-12">
 		<AppNavbar />
 		<AppHeader />
 		<div class="px-4 md:px-10 mx-auto w-full -m-32 relative">

@@ -20,7 +20,7 @@
 <div
 	class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded {color === 'light'
 		? 'bg-white'
-		: 'bg-red-800 text-white'}"
+		: 'bg-primary-800 text-white'}"
 >
 	<div class="rounded-t mb-0 px-4 py-3 border-0">
 		<div class="flex flex-wrap items-center">
@@ -40,7 +40,7 @@
 						class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left {color ===
 						'light'
 							? 'bg-slate-50 text-slate-500 border-slate-100'
-							: 'bg-red-700 text-red-200 border-red-600'}"
+							: 'bg-primary-700 text-primary-200 border-red-600'}"
 					>
 						Project
 					</th>
@@ -48,7 +48,7 @@
 						class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left {color ===
 						'light'
 							? 'bg-slate-50 text-slate-500 border-slate-100'
-							: 'bg-red-700 text-red-200 border-red-600'}"
+							: 'bg-primary-700 text-primary-200 border-red-600'}"
 					>
 						Budget
 					</th>
@@ -56,7 +56,7 @@
 						class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left {color ===
 						'light'
 							? 'bg-slate-50 text-slate-500 border-slate-100'
-							: 'bg-red-700 text-red-200 border-red-600'}"
+							: 'bg-primary-700 text-primary-200 border-red-600'}"
 					>
 						Status
 					</th>
@@ -64,7 +64,7 @@
 						class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left {color ===
 						'light'
 							? 'bg-slate-50 text-slate-500 border-slate-100'
-							: 'bg-red-700 text-red-200 border-red-600'}"
+							: 'bg-primary-700 text-primary-200 border-red-600'}"
 					>
 						Users
 					</th>
@@ -72,7 +72,7 @@
 						class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left {color ===
 						'light'
 							? 'bg-slate-50 text-slate-500 border-slate-100'
-							: 'bg-red-700 text-red-200 border-red-600'}"
+							: 'bg-primary-700 text-primary-200 border-red-600'}"
 					>
 						Completion
 					</th>
@@ -80,7 +80,7 @@
 						class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left {color ===
 						'light'
 							? 'bg-slate-50 text-slate-500 border-slate-100'
-							: 'bg-red-700 text-red-200 border-red-600'}"
+							: 'bg-primary-700 text-primary-200 border-red-600'}"
 					/>
 				</tr>
 			</thead>
@@ -136,10 +136,10 @@
 						<div class="flex items-center">
 							<span class="mr-2">60%</span>
 							<div class="relative w-full">
-								<div class="overflow-hidden h-2 text-xs flex rounded bg-red-200">
+								<div class="overflow-hidden h-2 text-xs flex rounded bg-primary-200">
 									<div
 										style="width: 60%;"
-										class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+										class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-primary-500"
 									/>
 								</div>
 							</div>
@@ -235,7 +235,7 @@
 					<td
 						class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
 					>
-						<i class="fas fa-circle text-red-500 mr-2" /> delayed
+						<i class="fas fa-circle text-primary-500 mr-2" /> delayed
 					</td>
 					<td
 						class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
@@ -269,10 +269,10 @@
 						<div class="flex items-center">
 							<span class="mr-2">73%</span>
 							<div class="relative w-full">
-								<div class="overflow-hidden h-2 text-xs flex rounded bg-red-200">
+								<div class="overflow-hidden h-2 text-xs flex rounded bg-primary-200">
 									<div
 										style="width: 73%;"
-										class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"
+										class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-primary-500"
 									/>
 								</div>
 							</div>

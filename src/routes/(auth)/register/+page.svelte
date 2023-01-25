@@ -84,7 +84,7 @@
 								/>
 								<span class="ml-2 text-sm font-semibold text-slate-600">
 									I agree with the
-									<a href="#pablo" on:click={(e) => e.preventDefault()} class="text-red-500">
+									<a href="#pablo" on:click={(e) => e.preventDefault()} class="text-primary-500">
 										Privacy Policy
 									</a>
 								</span>

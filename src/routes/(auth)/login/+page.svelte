@@ -105,7 +105,7 @@
 						</div>
 
 						<div class="text-center mt-6">
-							<button class="btn-neutral w-full" type="button"> Sign In </button>
+							<button class="btn-black w-full" type="button"> Sign In </button>
 						</div>
 					</form>
 				</div>

@@ -88,7 +88,7 @@
 					<a
 						href="/app"
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname === '/app'
-							? 'text-red-500 hover:text-red-600'
+							? 'text-primary-500 hover:text-primary-600'
 							: 'text-slate-700 hover:text-slate-500'}"
 					>
 						<i
@@ -102,11 +102,27 @@
 
 				<li>
 					<a
+						href="/app/button"
+						class="text-xs uppercase py-3 font-bold block {$page.url.pathname === '/app/button'
+							? 'text-primary-500 hover:text-primary-600'
+							: 'text-slate-700 hover:text-slate-500'}"
+					>
+						<i
+							class="fas fa-tv mr-2 text-sm {$page.url.pathname === '/app/button'
+								? 'opacity-75'
+								: 'text-slate-300'}"
+						/>
+						Button
+					</a>
+				</li>
+
+				<li>
+					<a
 						href="/app/settings"
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname.includes(
 							'/app/settings'
 						)
-							? 'text-red-500 hover:text-red-600'
+							? 'text-primary-500 hover:text-primary-600'
 							: 'text-slate-700 hover:text-slate-500'}"
 					>
 						<i
@@ -124,7 +140,7 @@
 						class="text-xs uppercase py-3 font-bold block {$page.url.pathname.includes(
 							'/app/tables'
 						)
-							? 'text-red-500 hover:text-red-600'
+							? 'text-primary-500 hover:text-primary-600'
 							: 'text-slate-700 hover:text-slate-500'}"
 					>
 						<i

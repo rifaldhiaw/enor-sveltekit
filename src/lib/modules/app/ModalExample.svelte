@@ -80,7 +80,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="flex gap-4 bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+						<div class="flex justify-center gap-4 bg-gray-50 px-4 py-3 sm:justify-end">
 							<button
 								type="button"
 								on:click={() => (isOpen = false)}

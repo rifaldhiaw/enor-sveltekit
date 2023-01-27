@@ -5,9 +5,8 @@
 
 	const [popperRef, popperContent] = createPopperActions();
 
-	// Example Popper configuration
 	const popperOptions = {
-		placement: 'bottom-end',
+		placement: 'bottom-start',
 		strategy: 'fixed',
 		modifiers: [{ name: 'offset', options: { offset: [0, 10] } }]
 	};
@@ -23,17 +22,14 @@
 
 <Menu>
 	<span class="rounded-md shadow-sm">
-		<MenuButton
-			use={[popperRef]}
-			class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white  rounded-md hover:text-gray-500 focus:outline-none focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-		>
+		<MenuButton use={[popperRef]} class="btn">
 			<i class="fas fa-ellipsis-v" />
 		</MenuButton>
 	</span>
 
 	<MenuItems
 		use={[[popperContent, popperOptions]]}
-		class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
+		class="w-56 mt-2 bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none z-10"
 	>
 		<div class="py-1">
 			<MenuItem as="a" href="#account-settings" class={resolveClass}>Account settings</MenuItem>
